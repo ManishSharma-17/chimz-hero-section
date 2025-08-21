@@ -157,6 +157,7 @@ header {
         height: 5px;
         background-color: white;
         border-radius: 2px;
+        transition: all 150ms linear;
     }
 
     .menu-links>nav {
@@ -177,5 +178,20 @@ header {
 
     .menu-links.show {
         right: 0;
+    }
+
+    .menu-icon.active span:first-child {
+        rotate: 45deg;
+        transform-origin: left;
+    }
+
+    .menu-icon.active span:nth-child(2) {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+
+    .menu-icon.active span:last-child {
+        rotate: -45deg;
+        transform-origin: left;
     }
 }
