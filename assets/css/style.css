@@ -24,20 +24,23 @@
     margin-right: -12px;
 }
 
-.col-5 {
-    width: 41.66%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.col-7 {
-    width: 58.33%;
+.col-12 {
+    width: 100%;
     padding-left: 12px;
     padding-right: 12px;
 }
 
 .flex {
     display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 .items-center {
@@ -139,7 +142,63 @@ header {
     background-position: center;
 }
 
+.text-green {
+    color: green;
+}
+
+.main-heading {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: #FFFFFF;
+}
+
+.description {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.info-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.blur-box {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 85.54%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(3px);
+    padding: 32px 8px;
+}
+
+@media (min-width:992px) {
+    .col-lg-5 {
+        width: 41.66%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
 @media (max-width:991.98px) {
+    .max-lg-col-reverse {
+        flex-direction: column-reverse;
+    }
+
     .menu-icon {
         width: 35px;
         height: 30px;
@@ -150,6 +209,12 @@ header {
         background-color: transparent;
         border: none;
         z-index: 1;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
 
     .menu-icon>span {
@@ -171,8 +236,8 @@ header {
         height: 100%;
         top: 0;
         right: -100%;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 85.54%, rgba(255, 255, 255, 0) 100%);
-        backdrop-filter: blur(3px);
+        background: linear-gradient(180deg, rgba(72, 72, 72, 0.821) 0%, rgba(37, 37, 37, 0.683) 85.54%, rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(7px);
         transition: all 150ms linear;
     }
 
