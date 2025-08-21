@@ -12,19 +12,19 @@
     <section class="bg-image">
         <header class="py-25">
             <div class="container">
-                <div class="flex items-center">
+                <div class="flex items-center justify-between gap-8">
                     <a href="" class="logo">
                         <img src="./assets/images/LOGO.png" alt="page logo">
                     </a>
-                    <nav class="flex items-center gap-46 w-100 justify-center">
-                        <a href="" class="nav-link">Home</a>
-                        <a href="" class="nav-link">About</a>
-                        <a href="" class="nav-link">How to buy</a>
-                        <a href="" class="nav-link">Tokenomics</a>
-                        <a href="" class="nav-link">Roadmap</a>
-                    </nav>
-                    <div class="flex items-center gap-32">
-                        <div class="flex gap-8">
+                    <div class="flex menu-links w-100 gap-32">
+                        <nav class="flex items-center gap-46 w-100 justify-center">
+                            <a href="" class="nav-link">Home</a>
+                            <a href="" class="nav-link">About</a>
+                            <a href="" class="nav-link">How to buy</a>
+                            <a href="" class="nav-link">Tokenomics</a>
+                            <a href="" class="nav-link">Roadmap</a>
+                        </nav>
+                        <div class="flex gap-8 justify-center">
                             <a href="" class="icon-box">
                                 <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,14 @@
                                 </svg>
                             </a>
                         </div>
+                    </div>
+                    <div class="flex items-center gap-32">
                         <button>buy now</button>
+                        <button class="menu-icon" hidden>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -64,6 +71,8 @@
             </div>
         </div>
     </section>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
