@@ -139,7 +139,6 @@ header {
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .text-green {
@@ -153,6 +152,8 @@ header {
     font-size: 64px;
     line-height: 77px;
     color: #FFFFFF;
+    text-shadow: currentColor 0 0 7px;
+
 }
 
 .description {
@@ -178,6 +179,28 @@ header {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 85.54%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(3px);
     padding: 32px 8px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+[alt="Hero_Placeholder"] {
+    transform: translate(0, 0);
+    animation-name: gorilla;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gorilla {
+    from {
+        transform: translate(2px, 0px);
+    }
+
+    to {
+        transform: translate(5px, 20px);
+    }
 }
 
 @media (min-width:992px) {
